@@ -1,1 +1,81 @@
+.circular-text {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+}
 
+.circular-text--small {
+  width: 60px;
+  height: 60px;
+  font-size: 10px;
+}
+
+.circular-text--medium {
+  width: 90px;
+  height: 90px;
+  font-size: 12px;
+}
+
+.circular-text--large {
+  width: 120px;
+  height: 120px;
+  font-size: 14px;
+}
+
+.circular-text__letter {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  color: var(--olive-dark, #6b7a3a);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.circular-text:hover .circular-text__letter {
+  color: var(--olive-medium, #8b9556);
+}
+
+/* Variantes de color */
+.circular-text--primary .circular-text__letter {
+  color: var(--olive-dark, #6b7a3a);
+}
+
+.circular-text--secondary .circular-text__letter {
+  color: var(--text-secondary, #5a6b4f);
+}
+
+.circular-text--accent .circular-text__letter {
+  color: var(--olive-light, #a4a882);
+}
+
+/* Efectos especiales */
+.circular-text--glow {
+  filter: drop-shadow(0 0 10px rgba(139, 149, 86, 0.3));
+}
+
+.circular-text--blur:hover {
+  filter: blur(0.5px);
+  transition: filter 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .circular-text--small {
+    width: 50px;
+    height: 50px;
+    font-size: 8px;
+  }
+  
+  .circular-text--medium {
+    width: 70px;
+    height: 70px;
+    font-size: 10px;
+  }
+  
+  .circular-text--large {
+    width: 90px;
+    height: 90px;
+    font-size: 12px;
+  }
+}
