@@ -1,1 +1,96 @@
+/* Variables CSS principales */
+:root {
+  /* Colores principales */
+  --beige-light: #f5f3f0;
+  --beige-medium: #e8e2d4;
+  --beige-dark: #d4c4a0;
+  --olive-light: #a4a882;
+  --olive-medium: #8b9556;
+  --olive-dark: #6b7a3a;
+  --text-primary: #2c3e27;
+  --text-secondary: #5a6b4f;
+  --white: #ffffff;
+  
+  /* Sombras */
+  --shadow-light: rgba(44, 62, 39, 0.05);
+  --shadow: rgba(44, 62, 39, 0.1);
+  --shadow-strong: rgba(44, 62, 39, 0.15);
+  --shadow-dark: rgba(44, 62, 39, 0.25);
+  
+  /* Tipografía */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Source Sans Pro', sans-serif;
+  
+  /* Tamaños de fuente */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  
+  /* Espaciado */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  
+  /* Border radius */
+  --radius-sm: 0.375rem;
+  --radius: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+  
+  /* Transiciones */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-tooltip: 1070;
+  
+  /* Breakpoints (para referencia en JavaScript) */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+}
 
+/* Modo oscuro (futuro) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --beige-light: #2c2a27;
+    --beige-medium: #3a3632;
+    --beige-dark: #4a453e;
+    --olive-light: #8b9556;
+    --olive-medium: #a4a882;
+    --olive-dark: #bbc299;
+    --text-primary: #f5f3f0;
+    --text-secondary: #d4c4a0;
+    --white: #1a1917;
+  }
+}
+
+/* Custom properties para animaciones */
+:root {
+  --cursor-size: 20px;
+  --cursor-border: 2px;
+}
