@@ -1,1 +1,14 @@
+{
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto desplegado en Netlify",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"No start script definido\" && exit 0",
+    "build": "echo \"No build script definido\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
 
